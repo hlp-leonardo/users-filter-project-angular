@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { UserInterface } from '../../interfaces/user/user.interface';
 
 @Component({
   selector: 'app-user-details',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class UserDetailsComponent {
 
+  @Input({ required: true }) user: UserInterface = {} as UserInterface;
 }

@@ -7,43 +7,43 @@
 
         <mat-list-item>
             <span class="mat-h2">Name: </span>
-            <span class="mat-h3">Example</span>
+            <span class="mat-h3">{{ user.name }}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">E-mail: </span>
-            <span class="mat-h3">example.com</span>
+            <span class="mat-h3">{{ user.email }}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">Telephone: </span>
-            <span class="mat-h3">+123 (12) 111000222</span>
+            <span class="mat-h3">{{ user.phone | phone }}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
-            <span class="mat-h2">Adress: </span>
-            <span class="mat-h3">Example Street, 1, Example - EX</span>
+            <span class="mat-h2">Address: </span>
+            <span class="mat-h3">{{ user.address | address }}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">Active Subscription: </span>
-            <span class="mat-h3">Yes</span>
+            <span class="mat-h3">{{ user.active }}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">Role: </span>
-            <span class="mat-h3">Example</span>
+            <span class="mat-h3">{{ user.role }}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <mat-list-item>
             <span class="mat-h2">Registration Date: </span>
-            <span class="mat-h3">01/02/1234</span>
+            <span class="mat-h3">{{ user.registrationDate }}</span>
         </mat-list-item>
         <mat-divider></mat-divider>
     </mat-list>
