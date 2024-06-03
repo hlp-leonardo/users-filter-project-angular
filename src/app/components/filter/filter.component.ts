@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FilterOptionInterface } from '../../interfaces/filter-options.interface';
 
 @Component({
   selector: 'app-filter',
@@ -7,10 +8,20 @@ import { Component } from '@angular/core';
 })
 export class FilterComponent {
 
-  foods = [
-    {
-      value: 'Ex. 1',
-      viewValue: 'Ex.1'
-    }
-  ]
+  filterOptions: FilterOptionInterface = {
+    name: undefined,
+    startDate: undefined,
+    endDate: undefined,
+    status: undefined
+  };
+
+  statusList = [
+    { description: 'Active', value: true },
+    { description: 'Inactive', value: false }
+  ];
+
+  onFilter() {
+    console.log(this.filterOptions);
+  }
+
 }
