@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { UsersList } from '../../data/users-list';
 import { UserInterface } from '../../interfaces/user/user.interface';
 
 @Component({
