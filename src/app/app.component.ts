@@ -31,7 +31,6 @@ export class AppComponent implements OnInit {
 
   onFilter(filterOptions: FilterOptionInterface) {
     console.log(filterOptions);
-
     this.usersListFiltered = this.filterUsersList(filterOptions, this.usersList);
   }
   filterUsersList(filterOptions: FilterOptionInterface, usersList: UserInterface[]): UserInterface[] {
@@ -51,5 +50,4 @@ export class AppComponent implements OnInit {
     return filteredList;
   }
 
-  
 }

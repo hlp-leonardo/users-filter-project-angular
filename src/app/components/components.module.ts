@@ -4,10 +4,10 @@ import { CommonModule } from '@angular/common';
 
 import { AngularMaterialModule } from "../angular-material/angular-material.module";
 
-import { UserDetailsComponent } from './user-details/user-details.component';
+import { PipesModule } from "../pipes/pipes.module";
 import { FilterComponent } from './filter/filter.component';
 import { UsersListComponent } from './users-list/users-list.component';
-import { PipesModule } from "../pipes/pipes.module";
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
     declarations: [
